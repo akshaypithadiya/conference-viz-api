@@ -3,9 +3,9 @@ import json
 acceptance_rates = []
 
 def load_acceptance_rate():
-	iclr_data = open('.././data/ICLR/acceptance_rate.json','r')
-	cvpr_data = open('.././data/CVPR/acceptance_rate.json', 'r')
-	acl_data = open('.././data/ACL/acceptance_rate.json','r')
+	iclr_data = open('./data/ICLR/acceptance_rate.json','r')
+	cvpr_data = open('./data/CVPR/acceptance_rate.json', 'r')
+	acl_data = open('./data/ACL/acceptance_rate.json','r')
 
 	iclr = json.load(iclr_data)
 	cvpr = json.load(cvpr_data)
