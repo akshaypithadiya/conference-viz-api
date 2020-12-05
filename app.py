@@ -20,4 +20,5 @@ api.add_resource(AcceptanceRate, '/conference/<string:_id>/acceptance-rate')
 api.add_resource(AllKeywords, '/conferences/keywords')
 api.add_resource(Keywords, '/conference/<string:_id>/keywords')
 
-app.run(port=5000, debug=True)
+if __name__ == "__main__":
+	app.run(port=5000, debug=True)
