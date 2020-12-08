@@ -1,12 +1,14 @@
 import json
 from flask import Flask
 from flask_restful import Api
+from flask_cors import CORS
 from resources.conference import Conference, Conferences
 from resources.acceptance_rate import AcceptanceRate, AcceptanceRates
 from resources.keywords import AllKeywords, Keywords
 
 app = Flask(__name__)
 api = Api(app)
+CORS(app)
 
 # conference details
 api.add_resource(Conferences, '/conferences')
