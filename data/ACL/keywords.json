@@ -1,5 +1,5 @@
 {
-	"id": "CVPR",
+	"id": "ACL",
 	"keywords":[
 		{
 			"image": 222,
@@ -8,6 +8,10 @@
 		{
 			"image": 333,
 			"capusle_networks": 15
+		},
+		{
+			"image": 111,
+			"capusle_networks": 6
 		}
 	]
 }
