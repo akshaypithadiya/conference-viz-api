@@ -1,4 +1,4 @@
-# conference-viz Api
+# conference-viz API
 
 ## Requirements
 1. Download and install [Python 3.8+](https://www.python.org/downloads/)
