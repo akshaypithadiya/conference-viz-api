@@ -2,21 +2,55 @@
 
 ## Requirements
 
-1. Download and install [Python 3.8+](https://www.python.org/downloads/)
-2. Create a virtual environment and install dependencies, open your terminal or command prompt and execute the following commands :
+Make sure you have Python 3.8+ installed.
 
-```
-python3 -m venv conference-viz-api
-source conference-viz-api/bin/activate
+### Setup Instructions
+
+Open your terminal or command prompt and run the following commands :
+
+```bash
+# Create a virtual environment
+python3 -m venv confviz-env
+
+# Activate the virtual environment
+source confviz-env/bin/activate
+
+# Install dependencies
 pip install -r requirements.txt
 ```
 
 ## Running the Application
 
-To start the application, use the following command :
+To start the application :
 
-`python app.py`
+```bash
+python app.py
+```
 
 ## API Documentation
 
-You can find the API documentation in the [Swagger Docs](swagger.yaml)
+You can access the API documentation via Swagger Docs once the app is running.
+
+## API Endpoints
+
+### Conference Details
+
+- `GET /conferences` - Get all conferences
+- `GET /conference/<string:_id>` - Get a specific conference by ID
+
+### Acceptance Rates
+
+- `GET /conferences/acceptance-rates` - Get acceptance rates for all conferences
+- `GET /conference/<string:_id>/acceptance-rate` - Get acceptance rate for a specific conference
+
+### Keywords
+
+- `GET /conferences/keywords` - Get keywords for all conferences
+- `GET /conference/<string:_id>/keywords` - Get keywords for a specific conference
+
+### Papers
+
+- `GET /conferences/papers` - Get all papers for all conferences
+- `GET /conference/<string:_id>/papers` - Get papers for a specific conference
+
+---
